@@ -68,13 +68,13 @@ p {
 
 @media (max-width: 600px) {
     h1 {
-        width: 90%; /* Take up more space on smaller screens */
+        width: 90%; 
     }
     h2 {
-        width: 90%; /* Take up more space on smaller screens */
+        width: 90%; 
     }
     h3 {
-        width: 90%; /* Take up more space on smaller screens */
+        width: 90%;
     }
 
 }
@@ -100,7 +100,7 @@ p {
 
 @media (max-width: 600px) {
     h1 {
-        width: 90%; /* Take up more space on smaller screens */
+        width: 90%;
     }
 
     .img {
@@ -224,15 +224,69 @@ p {
     padding: 30px;
   }
 
-  .nav-link a{
+  .nav-link a {
     display: block;
   }
   
   .nav-link:hover {
     color: var(--orange);
-    border: 2px solid var(--orange); 
-    border-radius: 30px;
+    border: solid var(--orange); 
+    border-radius: 20px;
   }
+
+  .small-screen-navbar {
+    display: none;
+  }
+  
+  .small-screen-navbar-element-container {
+    display: none;
+  }
+
+  .navbar-toggle-trigger {
+    display: none;
+  }
+  
+  .navbar-toggle-trigger:checked ~ .small-screen-navbar-element-container {
+    display: block;
+  }
+
+  .navbar-circular-icon-button {
+    font-size: 2rem;
+    padding: 1em;
+    color: var(--cream);
+    background-color: transparent;
+  }
+
+@media screen and (max-width: 900px) { 
+    /* On a small screen, show the small screen navbar*/
+    .small-screen-navbar {
+        display: block;
+
+    }
+
+    .large-screen-navbar {
+        display: none;
+    }    
+
+    .nav-list {
+        display: flex;
+        flex-direction: column; /* Stack the items vertically */
+        gap: 10px; 
+    }
+
+    .nav-list-item {
+        grid-row: auto;
+        width: 100%; 
+        background-color: var(--gray);
+    }
+
+    /*I don't want border to show when using mobile*/
+    .nav-link:hover { 
+        border: 0px; 
+        border-radius: 0px;
+      }
+}
+
 
   /* Form Stuff */
 

@@ -2,7 +2,7 @@ const header = document.createElement('header');
 
 //All Menu Links
 const items = [
-    { href: 'about.html', text: 'About' },
+    { href: 'about.html', text: 'About Me' },
     { href: 'contact.html', text: 'Contact' },
     { href: 'previous-work.html', text: 'Previous Work' },
     { href: 'projects.html', text: 'Projects' },

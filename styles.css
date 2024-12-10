@@ -21,6 +21,65 @@ body {
     background-color: var(--gray);
 }
 
+/* General Settings */
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cream);
+    text-align: center;
+    padding: 0.75em;
+    border-bottom: solid 2px var(--light-gray);
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+p {
+    line-height: 1.75em;
+    font-size:1.25em;
+}
+
+/* About Section */
+
+.img {
+    display: flex;
+    width: 55%;
+    margin: 0 auto;
+  }
+  
+.bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 55%;
+
+    color: var(--cream);
+    font-weight: light;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        width: 90%; /* Take up more space on smaller screens */
+    }
+
+    .img {
+        display: flex;
+        width: 85%;
+        margin: 0 auto;
+      }    
+
+    .bio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        width: 85%;
+    }
+    
+}
+
  /* Navbar Stuff */
 
 .navbar {
@@ -114,6 +173,7 @@ body {
     padding-right: 1em;
     padding-left: 1em;
     font-size: 1em;
+    font-weight: bold;
   }
   
   .buttons button[type="submit"] {

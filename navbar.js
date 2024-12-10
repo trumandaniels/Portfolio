@@ -29,5 +29,5 @@ largeScreenNavbar.className = 'navbar large-screen-navbar';
 largeScreenNavbar.appendChild(navList);
 
 header.appendChild(largeScreenNavbar);
-document.body.insertBefore(header, document.body.firstChild); //make header
+document.body.insertBefore(header, document.body.firstChild); //make header appear at the top
 
